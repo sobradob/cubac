@@ -1,0 +1,6 @@
+# Site settings
+baseurl = "https://example.org"
+languageCode = "en-us"
+title = "Havana Airport Transfer"
+theme = "blank"
+

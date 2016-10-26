@@ -1,0 +1,22 @@
+
+ <div class="product">
+              {{ range .Site.Data.products }}
+  <a class="product" href="{{ .baseurl }}{{ .url }}">
+    <img src="{{ .image }}" alt="{{ .name }}" class="thumbnail"/>
+    <p>{{ .name }}</p>
+  </a>
+  
+  <button class="snipcart-add-item"
+    data-item-name="{{ .name }}"
+    data-item-id="{{ .sku }}"
+    data-item-image="{{ .image }}"
+    data-item-url="{{ .baseurl }}"
+    data-item-price="{{ .price }}">
+    Buy it for {{ .price }} $
+  </button>
+
+</div>
+            {{ end }}
+        </div>
+    </div>
+</section>
